@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  * Return: 0
@@ -10,6 +11,6 @@ int main(void)
 	for (num = 0; num < 10; num++)
 		printf("%d", num);
 
-	print("\n");
+	printf("\n");
 	return (0);
 }
