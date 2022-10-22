@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
- * main - prints all strings from 0 to 9
+ * main - Entry point
  * Return: 0
  */
 int main(void)
 {
 	int i;
 
-	for (i = '0'; <= '9'; i++)
-		printf(i);
+	for (i = '0'; i <= '9'; i++)
+		putchar(i);
 
 	putchar('\n');
 
