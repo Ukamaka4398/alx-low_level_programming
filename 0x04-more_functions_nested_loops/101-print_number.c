@@ -1,36 +1,28 @@
-#include <math.h>
-#include <stdio.h>
-#include <assert.h>
+#include "main.h"
 
 /**
- * main - This program prints the largest
- * prime factor of the number `612852475143`
- * followed by a new line
+ * print_number - print an integer (with no trailing newline)
+ * @n: integer to print
  *
- * Return: Always 0
+ * Return: void
  */
-int main(void)
+void print_number(int n)
 {
-	int lrgst;		   /* largest prime factor */
-	unsigned long num; /* the given number */
-	int pfactor;	   /* prime factor */
+	unsigned int m;
 
-	num = 612852475143;
-	lrgst = 2;
-
-	for (pfactor = 2; num % pfactor == 0;)
-		num = num / pfactor;
-	/* after the above step, num must be odd */
-		assert(num % 2 == 1);
-
-	for (pfactor = 3; pfactor <= sqrt(num); pfactor = pfactor + 2)
+	if (n >= 0)
 	{
-		while (num % pfactor == 0)
-			num = num / pfactor;
-			lrgst = pfactor;
+		if (n >= 10)
+			print_number(n / 10);
+		_putchar('0' + n % 10);
 	}
-	if (num > 2)
-		lrgst = num;
-		printf("%d\n", lrgst);
-		return (0);
+	else
+	{
+		_putchar('-');
+		m = -1 * n;
+		if (m >= 10)
+			print_number(m / 10);
+		_putchar('0' + m % 10);
+	}
+
 }
