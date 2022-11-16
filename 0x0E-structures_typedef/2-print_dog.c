@@ -5,17 +5,11 @@
 
 
 /**
-
  * print_dog - prints a dog
-
  *
-
  * @d: dog to print
-
  *
-
  * Return: void
-
  */
 
 void print_dog(struct dog *d)

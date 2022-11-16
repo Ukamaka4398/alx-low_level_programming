@@ -5,13 +5,9 @@
 
 
 /**
-
  * _copy  -   Make a copy of passed in argument
-
  * @src:      Data to make copy of
-
  * Return:    Pointer
-
  */
 
 
