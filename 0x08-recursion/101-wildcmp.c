@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 
 int recursive_check(char *s1, char *s2, int wildC);
